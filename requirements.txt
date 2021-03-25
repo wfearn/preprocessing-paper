@@ -1,0 +1,11 @@
+wordsegment
+nltk
+scipy
+numpy
+bs4
+sklearn
+gensim
+tqdm
+matplotlib
+git+git://github.com/byu-aml-lab/ankura.git#egg=ankura
+git+git://github.com/mammothb/symspellpy.git#egg=symspellpy
