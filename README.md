@@ -41,27 +41,27 @@ supercomputer made it convenient.
 
 Here are some example commands for how to use these parts together:
 
-    1. python3 preprocess\_corpus.py --corpus amazon --methods lc,np,nr
+    1. python3 preprocess_corpus.py --corpus amazon --methods lc,np,nr
 
 This will begin preprocessing the amazon corpus using lowercasing (lc), punctuation removal (np),
 and number removal (nr).
 Note that if you want to use rare word filtering you must have first built the vocabulary for it.
 
-    2. python3 $PREPROCESS\_DIR/preprocess/combiner.py --corpus amazon
+    2. python3 $PREPROCESS_DIR/preprocess/combiner.py --corpus amazon
 
 This will combine the parts of the amazon corpus together which were split up during preprocessing.
 
-    3. python3 create\_vocabulary.py --corpus amazon --methods lc,np,nr --seed 0
+    3. python3 create_vocabulary.py --corpus amazon --methods lc,np,nr --seed 0
 
 This will create a vocabulary based on the corpus that we preprocessed in the previous two steps.
 It is important to know the seed from the previous steps (defaults to 0 if not specified).
 
-    4. python3 import\_corpus.py --corpus amazon --methods lc,np,nr --train 100000 --seed 0
+    4. python3 import_corpus.py --corpus amazon --methods lc,np,nr --train 100000 --seed 0
 
 This will create a pickled corpus useful for analysis that has a training size of 100,000 documents.
 Again it is important to make sure that the methods and seed stay consistent across steps of the experiment.
 
-    5. python3 run\_analysis.py --corpus amazon --methods lc,np,nr --model nb --train 100000 --seed 0
+    5. python3 run_analysis.py --corpus amazon --methods lc,np,nr --model nb --train 100000 --seed 0
 
 This final step will run naive bayes (nb) on the corpus that we imported in step 4.
 
