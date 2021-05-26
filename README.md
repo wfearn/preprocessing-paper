@@ -1,10 +1,13 @@
 # Introduction
-A repository with the code used to produce the results in the NAACL2021 paper titled Exploring the Relationship Between Algorithm Performance, Vocabulary, and Run-Time in Text Classification.
+A repository with the code used to produce the results in the NAACL2021 paper titled [Exploring the Relationship Between Algorithm Performance, Vocabulary, and Run-Time in Text Classification](https://arxiv.org/pdf/2104.03848.pdf).
 
 # Information
 Here is a list of the directories and what they contain:
 
 preprocess - the main code folder, can be accessed as a package in python by running 'python3 setup.py --install'
+
+results_and_data - this folder contains the data and scripts used to create the plots and tables in the paper. **If you simply want to examine the data
+or run additional analyses, start here.**
 
 scripts - Folder with bash, slurm, and python scripts that can be used to perform different steps of the
 experiment pipeline as well as run these steps using a slurm scheduler.
@@ -66,3 +69,13 @@ Again it is important to make sure that the methods and seed stay consistent acr
 This final step will run naive bayes (nb) on the corpus that we imported in step 4.
 
 All results can be found in the $HOME/.preprocess folder.
+
+# Citation
+```
+@article{fearn2021exploring,
+  title={Exploring the Relationship Between Algorithm Performance, Vocabulary, and Run-Time in Text Classification},
+  author={Fearn, Wilson and Weller, Orion and Seppi, Kevin},
+  journal={arXiv preprint arXiv:2104.03848},
+  year={2021}
+}
+```

@@ -7,5 +7,6 @@ sklearn
 gensim
 tqdm
 matplotlib
+seaborn
 git+git://github.com/byu-aml-lab/ankura.git#egg=ankura
 git+git://github.com/mammothb/symspellpy.git#egg=symspellpy
